@@ -1,0 +1,58 @@
+Profesor Ana esperando cafe
+Cafetera preparada y deposita Cafe-1. En depósito: 1
+Profesor Marta retira cafe-1. En depósito: 0
+Profesor Luis esperando cafe
+Profesor Ana esperando cafe
+Profesor Marta esperando cafe
+Cafetera preparada y deposita Cafe-2. En depósito: 1
+Profesor Luis retira cafe-2. En depósito: 0
+Profesor Marta esperando cafe
+Profesor Ana esperando cafe
+Cafetera preparada y deposita Cafe-3. En depósito: 1
+Profesor Marta retira cafe-3. En depósito: 0
+Profesor Ana esperando cafe
+Cafetera preparada y deposita Cafe-4. En depósito: 1
+Profesor Ana retira cafe-4. En depósito: 0
+Cafetera preparada y deposita Cafe-5. En depósito: 1
+Profesor Luis retira cafe-5. En depósito: 0
+Profesor Ana esperando cafe
+Cafetera preparada y deposita Cafe-6. En depósito: 1
+Profesor Ana retira cafe-6. En depósito: 0
+Profesor Marta esperando cafe
+Cafetera preparada y deposita Cafe-7. En depósito: 1
+Profesor Marta retira cafe-7. En depósito: 0
+Cafetera preparada y deposita Cafe-8. En depósito: 1
+Profesor Ana retira cafe-8. En depósito: 0
+Profesor Luis esperando cafe
+Cafetera preparada y deposita Cafe-9. En depósito: 1
+Profesor Luis retira cafe-9. En depósito: 0
+Profesor Marta esperando cafe
+Cafetera preparada y deposita Cafe-10. En depósito: 1
+Profesor Marta retira cafe-10. En depósito: 0
+Cafetera preparada y deposita Cafe-11. En depósito: 1
+Profesor Luis retira cafe-11. En depósito: 0
+Cafetera preparada y deposita Cafe-12. En depósito: 1
+Profesor Marta retira cafe-12. En depósito: 0
+Cafetera preparada y deposita Cafe-13. En depósito: 1
+Profesor Luis retira cafe-13. En depósito: 0
+Cafetera preparada y deposita Cafe-14. En depósito: 1
+Profesor Ana retira cafe-14. En depósito: 0
+Cafetera preparada y deposita Cafe-15. En depósito: 1
+Cafetera preparada y deposita Cafe-16. En depósito: 2
+Profesor Luis retira cafe-15. En depósito: 1
+Profesor Marta retira cafe-16. En depósito: 0
+Cafetera preparada y deposita Cafe-17. En depósito: 1
+Profesor Ana retira cafe-17. En depósito: 0
+Cafetera preparada y deposita Cafe-18. En depósito: 1
+Profesor Luis retira cafe-18. En depósito: 0
+Profesor Marta esperando cafe
+Cafetera preparada y deposita Cafe-19. En depósito: 1
+Profesor Marta retira cafe-19. En depósito: 0
+Profesor Luis esperando cafe
+Cafetera preparada y deposita Cafe-20. En depósito: 1
+Se acabo la producción de cafe por hoy !!
+Profesor Luis retira cafe-20. En depósito: 0
+Profesor Ana ya no quiere mas café
+Profesor Marta ya no quiere mas café
+Profesor Luis ya no quiere mas café
+Todos los profesores están a tope de cafeína!!
