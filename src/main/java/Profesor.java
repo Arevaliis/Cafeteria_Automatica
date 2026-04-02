@@ -10,8 +10,8 @@ public class Profesor implements Runnable {
         while (quedaCafe){
 
            try{
-               Thread.sleep((int) (Math.random() * 7000) + 100);
                quedaCafe = cafetera.cogerCafe();
+               Thread.sleep((int) (Math.random() * 3000) + 100);
 
            } catch (InterruptedException e) { throw new RuntimeException(e); }
        }

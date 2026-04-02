@@ -1,7 +1,7 @@
-public class DepositoCafes implements Runnable {
+public class DepositoCafe implements Runnable {
     private final Cafetera cafetera;
 
-    public DepositoCafes(Cafetera cafetera) { this.cafetera = cafetera; }
+    public DepositoCafe(Cafetera cafetera) { this.cafetera = cafetera; }
 
     @Override
     public void run() {
