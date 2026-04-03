@@ -5,11 +5,11 @@ public class DepositoCafe implements Runnable {
 
     @Override
     public void run() {
-        boolean quedaCafe = true;
+        boolean hacerCafe = true;
 
-        while (quedaCafe) {
+        while (hacerCafe) {
             try {
-                quedaCafe = cafetera.depositarCafe();
+                hacerCafe = cafetera.depositarCafe();
                 Thread.sleep((int) (Math.random() * 1000) + 100);
 
             } catch (InterruptedException e) {

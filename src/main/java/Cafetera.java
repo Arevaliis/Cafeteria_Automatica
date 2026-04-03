@@ -11,7 +11,8 @@ public class Cafetera {
     private int consumoProfesores = 0;
 
     /**
-     * Este metodo permite hacer cafes siempre y cuando no se sobrepase la capacidad máxima del depósito de cafes.
+     * Este metodo permite hacer cafes siempre y cuando no se sobrepase la capacidad máxima del depósito de cafes. En caso de haber
+     * 5 cafes en el depósito, parará la producción de cafes hasta que otro lo despierte y vuelva a reanudarse la producción de cafés.
      *
      * Uso de synchronized: Produce exclusion mutua entre hilos, es decir, solo un hilo podrá modificar los recursos
      * compartidos de cafe_disponible y contador_total_cafes, evitando así, acceso concurrente a estos recursos.
@@ -20,7 +21,7 @@ public class Cafetera {
      */
     public synchronized boolean depositarCafe() {
 
-        while (cafesDisponibles == CAPACIDAD_MAXIMA_DEPOSITO ){ // Usamos while para que al despertarse el hilo vuelva a revisar la condición
+        while (cafesDisponibles == CAPACIDAD_MAXIMA_DEPOSITO ){ // Usamos while en vez de un if, para que al despertarse el hilo vuelva a revisar la condición
 
             try {
                  wait(); // PONE EN ESPERA EL HILO QUE PRODUCE CAFE AL ESTAR LLENO EL DEPÓSITO. SI NO SE HICIERA USO
