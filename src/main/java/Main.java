@@ -3,10 +3,10 @@ public class Main {
     public static void main(String[] args) {
         Cafetera cafetera = new Cafetera();
 
-        Thread profesor1 =new Thread( new Profesor( cafetera), "Ana");
-        Thread profesor2 =new Thread( new Profesor( cafetera), "Luis");
-        Thread profesor3 =new Thread( new Profesor( cafetera), "Marta");
-        Thread deposito =new Thread( new DepositoCafe( cafetera));
+        Thread profesor1 = new Thread( new Profesor( cafetera), "Ana");
+        Thread profesor2 = new Thread( new Profesor( cafetera), "Luis");
+        Thread profesor3 = new Thread( new Profesor( cafetera), "Marta");
+        Thread deposito = new Thread( new DepositoCafe( cafetera));
 
         profesor1.start();
         profesor2.start();

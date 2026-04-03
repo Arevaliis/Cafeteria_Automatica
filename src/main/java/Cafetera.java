@@ -11,16 +11,18 @@ public class Cafetera {
     private int consumoProfesores = 0;
 
     /**
-     * Este metodo permite hacer cafes siempre y cuando no se sobrepase la capacidad máxima del depósito de cafes.
-     *
-     * Uso de synchronized: Produce exclusion mutua entre hilos, es decir, solo un hilo podrá modificar los recursos
-     * compartidos de cafe_disponible y contador_total_cafes, evitando así, acceso concurrente a estos recursos.
+     * Este metodo permite hacer cafes siempre y cuando no se sobrepase la capacidad máxima del depósito de cafes. En caso de haber
+     * 5 cafes en el depósito, parará la producción de cafes hasta que otro lo despierte y vuelva a reanudarse la producción de cafés.
+     * <p>
+     * Uso de synchronized: Produce exclusion mutua entre hilos, es decir, solo un hilo podrá modificar el recurso
+     * compartido de cafeDisponible, evitando así, acceso concurrente al recurso.
+     * </p>
      *
      * @return true si a llegado a los cafes máximos por dia, o false si no.
      */
     public synchronized boolean depositarCafe() {
 
-        while (cafesDisponibles == CAPACIDAD_MAXIMA_DEPOSITO ){ // Usamos while para que al despertarse el hilo vuelva a revisar la condición
+        while (cafesDisponibles == CAPACIDAD_MAXIMA_DEPOSITO ){ // Usamos while en vez de un if, para que al despertarse el hilo vuelva a revisar la condición
 
             try {
                  wait(); // PONE EN ESPERA EL HILO QUE PRODUCE CAFE AL ESTAR LLENO EL DEPÓSITO. SI NO SE HICIERA USO
@@ -49,8 +51,10 @@ public class Cafetera {
      * Este metodo permite a los profesores coger un cafe siempre y cuando haya cafes disponibles en el depósito, si no hubiera cafes
      * disponibles quedarán a la espera de que otro hilo los despierte y vuelvan a intentar ir a por cafe.
      *
+     * <p>
      * Uso de synchronized: Al igual que el metodo anterior, produce exclusion mutua entre los hilos, dando lugar a que los profesores
      * vayan de uno en uno a por cafe, sin producirse ninguna race condition, ni tampoco ningún acceso concurrente a los recursos compartidos.
+     * </p>
      *
      * @return true si hay cafes disponibles, false si no hay cafes disponibles y además, se ha llegado a la producción máxima de cafe por día.
      */
